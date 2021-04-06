@@ -7,11 +7,16 @@
 
 ## Properties
 
-| Property | Attribute | Description     | Type     | Default     |
-| -------- | --------- | --------------- | -------- | ----------- |
-| `first`  | `first`   | The first name  | `string` | `undefined` |
-| `last`   | `last`    | The last name   | `string` | `undefined` |
-| `middle` | `middle`  | The middle name | `string` | `undefined` |
+| Property   | Attribute  | Description | Type      | Default |
+| ---------- | ---------- | ----------- | --------- | ------- |
+| `question` | `question` |             | `boolean` | `true`  |
+
+
+## Events
+
+| Event   | Description | Type                                                                                                                |
+| ------- | ----------- | ------------------------------------------------------------------------------------------------------------------- |
+| `state` |             | `CustomEvent<SmileyState.BAD \| SmileyState.NOT_WELL \| SmileyState.OKAY \| SmileyState.SUPER \| SmileyState.WELL>` |
 
 
 ----------------------------------------------
