@@ -1,0 +1,55 @@
+{
+  "name": "@bonjour-foundation/smiley",
+  "version": "1.0.0",
+  "description": "An interactive smiley to communicate how you feel (about something).",
+  "main": "dist/index.cjs.js",
+  "module": "dist/index.js",
+  "es2015": "dist/esm/index.js",
+  "es2017": "dist/esm/index.js",
+  "jsnext:main": "dist/esm/index.js",
+  "types": "dist/types/index.d.ts",
+  "collection": "dist/collection/collection-manifest.json",
+  "collection:main": "dist/collection/index.js",
+  "unpkg": "dist/bonjour-smiley/bonjour-smiley.esm.js",
+  "files": [
+    "dist/",
+    "loader/",
+    "README.md",
+    "LICENSE"
+  ],
+  "scripts": {
+    "build": "stencil build --docs",
+    "start": "stencil build --dev --watch --serve",
+    "test": "stencil test --spec --e2e",
+    "test.watch": "stencil test --spec --e2e --watchAll"
+  },
+  "devDependencies": {
+    "@stencil/core": "^2.5.2",
+    "@stencil/postcss": "^2.0.0",
+    "@stencil/sass": "^1.4.1",
+    "@types/jest": "^26.0.22",
+    "@types/puppeteer": "^5.4.3",
+    "autoprefixer": "^10.2.5",
+    "husky": "^6.0.0",
+    "jest": "^26.6.3",
+    "jest-cli": "^26.6.3",
+    "prettier": "^2.2.1",
+    "pretty-quick": "^3.1.0",
+    "puppeteer": "^8.0.0"
+  },
+  "license": "AGPL-3.0-or-later",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/bonjour-foundation/smiley.git"
+  },
+  "author": "David Dal Busco",
+  "bugs": {
+    "url": "https://github.com/bonjour-foundation/smiley/issues"
+  },
+  "homepage": "https://bonjour.help",
+  "husky": {
+    "hooks": {
+      "pre-commit": "pretty-quick --staged"
+    }
+  }
+}

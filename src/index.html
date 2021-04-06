@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html dir="ltr" lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=5.0" />
+    <title>Bonjour Foundation - Smiley</title>
+
+    <script type="module" src="/build/bonjour-smiley.esm.js"></script>
+    <script nomodule src="/build/bonjour-smiley.js"></script>
+  </head>
+  <body>
+    <bonjour-smiley> </bonjour-smiley>
+
+    <p>user selected state: <mark></mark></p>
+
+    <script>
+      document.addEventListener('DOMContentLoaded', () => {
+        const smiley = document.querySelector('bonjour-smiley');
+        smiley.addEventListener(
+          'state',
+          ($event) => {
+            const mark = document.querySelector('mark');
+            mark.innerHTML = $event.detail;
+          },
+          {passive: true}
+        );
+      });
+    </script>
+  </body>
+</html>

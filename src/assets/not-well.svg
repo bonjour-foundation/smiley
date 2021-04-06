@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 165 165" style="enable-background:new 0 0 165 165;" xml:space="preserve">
+<style type="text/css">
+	.st0{fill:url(#Ellipse_1780_1_);}
+	.st1{fill:#FFFFFF;}
+	.st2{fill:none;stroke:#007EF0;stroke-width:6;}
+	.st3{fill:#007EF0;}
+</style>
+<radialGradient id="Ellipse_1780_1_" cx="-16338.5908" cy="-14563.7559" r="0.4992" gradientTransform="matrix(165 0 0 -165 2695950 -2402937.25)" gradientUnits="userSpaceOnUse">
+	<stop  offset="0" style="stop-color:#007EF0"/>
+	<stop  offset="1" style="stop-color:#007EF0;stop-opacity:0"/>
+</radialGradient>
+<circle id="Ellipse_1780" class="st0" cx="82.5" cy="82.5" r="82.5"/>
+<g id="Ellipse_1775" transform="translate(2632 -21324)">
+	<circle class="st1" cx="-2549.5" cy="21406.5" r="64.5"/>
+	<circle class="st2" cx="-2549.5" cy="21406.5" r="61.5"/>
+</g>
+<g id="Group_4832" transform="translate(2664.544 -21280.688)">
+	<circle id="Ellipse_1772" class="st3" cx="-2606.3" cy="21349.7" r="7.7"/>
+	<circle id="Ellipse_1773" class="st3" cx="-2557.7" cy="21349.7" r="7.7"/>
+</g>
+<path class="st3" d="M107.7,111.3c2.3,0,3.6-2.7,2.1-4.4c-6.5-7.9-16.3-13-27.3-13s-20.9,5.1-27.3,13c-1.4,1.8-0.2,4.4,2.1,4.4
+	H107.7z"/>
+</svg>
