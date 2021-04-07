@@ -100,7 +100,7 @@ export class Smiley {
 
     return (
       <label key="state" htmlFor="smiley" class={`state ${this.stateLabel}`}>
-        <slot>{translate(this.smiley)}</slot>
+        {translate(this.smiley)}
       </label>
     );
   }
