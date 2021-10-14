@@ -89,20 +89,25 @@ label {
   }
 
   /**
-   * @prop --text-font-size: text fonz-size
-   * @default: 1.25rem
+   * @prop --text-font-size: text font-size
+   * @default: 1rem
    */
-  font-size: var(--text-font-size, 1.25rem);
+  font-size: var(--text-font-size, 1rem);
   /**
-   * @prop --text-font-weight: text fonz-weight
-   * @default: 400
+   * @prop --text-font-weight: text font-weight
+   * @default: 800
    */
-  font-weight: var(--text-font-weight, 400);
+  font-weight: var(--text-font-weight, 800);
   /**
    * @prop --text-line-height: text line-height
-   * @default: calc(5rem / 3)
+   * @default: calc(4rem / 3)
    */
-  line-height: var(--text-line-height, calc(5rem / 3));
+  line-height: var(--text-line-height, calc(4rem / 3));
+  /**
+   * @prop --text-font-family: text font-family
+   * @default: 1rem
+   */
+  font-family: var(--text-font-family, inherit);
 
   text-align: center;
 

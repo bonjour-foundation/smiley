@@ -29,7 +29,8 @@
 
 | Name                 | Description                                                                    |
 | -------------------- | ------------------------------------------------------------------------------ |
-| `--margin`           | a margin that reduces the smiley size in comparison to its host @default: 5rem |
+| `--inner-margin`     | a margin that reduces the smiley size in comparison to its host @default: 5rem |
+| `--margin`           | the component margin @default: 0 auto                                          |
 | `--outline`          | the outline around the smiley button @default: none                            |
 | `--size`             | the component size @default: 15rem                                             |
 | `--text-font-size`   | text fonz-size @default: 1.25rem                                               |
