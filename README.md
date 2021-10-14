@@ -1,12 +1,12 @@
-# Smiley
+# Smiley 😃
 
 An interactive smiley to communicate how you feel (about something).
 
 ## Run the project locally
 
-Make sure you have a recent version of [Node.js installed](https://nodejs.org/en/) (LTS recommended).
+Make sure you have a recent version of [Node.js installed](https://nodejs.org/en/).
 
-These Web Components are developed with [Stencil](https://stenciljs.com/).
+This Web Component is developed with [Stencil](https://stenciljs.com/).
 
 ```
 git clone https://github.com/bonjour-foundation/smiley
