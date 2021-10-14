@@ -3,10 +3,10 @@
 
   /**
    * @prop --size: the component size
-   * @default: 15rem
+   * @default: 12rem
    */
-  width: var(--size, 15rem);
-  height: var(--size, 15rem);
+  width: var(--size, 12rem);
+  height: var(--size, 12rem);
 
   /**
    * @prop --margin: the component margin
@@ -44,10 +44,10 @@ button {
 
   /**
    * @prop --inner-margin: a margin that reduces the smiley size in comparison to its host
-   * @default: 5rem
+   * @default: 3rem
    */
-  width: calc(var(--size, 15rem) - var(--inner-margin, 5rem));
-  height: calc(var(--size, 15rem) - var(--inner-margin, 5rem));
+  width: calc(var(--size, 12rem) - var(--inner-margin, 3rem));
+  height: calc(var(--size, 12rem) - var(--inner-margin, 3rem));
 
   &:focus,
   &:active {
@@ -78,7 +78,7 @@ label {
    * @prop --text-top: an offset to display the question and labels
    * @default: 1.6rem
    */
-  transform: translate(-50%, calc(-1 * ((var(--size, 15rem) - var(--text-top, 1.6rem)) / 2)));
+  transform: translate(-50%, calc(-1 * ((var(--size, 12rem) - var(--text-top, 1.4rem)) / 2)));
 
   pointer-events: none;
 

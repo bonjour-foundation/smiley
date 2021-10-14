@@ -29,13 +29,14 @@
 
 | Name                 | Description                                                                    |
 | -------------------- | ------------------------------------------------------------------------------ |
-| `--inner-margin`     | a margin that reduces the smiley size in comparison to its host @default: 5rem |
+| `--inner-margin`     | a margin that reduces the smiley size in comparison to its host @default: 3rem |
 | `--margin`           | the component margin @default: 0 auto                                          |
 | `--outline`          | the outline around the smiley button @default: none                            |
-| `--size`             | the component size @default: 15rem                                             |
-| `--text-font-size`   | text fonz-size @default: 1.25rem                                               |
-| `--text-font-weight` | text fonz-weight @default: 400                                                 |
-| `--text-line-height` | text line-height @default: calc(5rem / 3)                                      |
+| `--size`             | the component size @default: 12rem                                             |
+| `--text-font-family` | text font-family @default: 1rem                                                |
+| `--text-font-size`   | text font-size @default: 1rem                                                  |
+| `--text-font-weight` | text font-weight @default: 800                                                 |
+| `--text-line-height` | text line-height @default: calc(4rem / 3)                                      |
 | `--text-top`         | an offset to display the question and labels @default: 1.6rem                  |
 | `--zIndex`           | the smiley button z-index                                                      |
 
