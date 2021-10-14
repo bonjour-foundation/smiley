@@ -2,6 +2,8 @@
 
 An interactive smiley to communicate how you feel (about something).
 
+[![npm](https://img.shields.io/npm/v/@bonjour-foundation/smiley/latest.svg)](https://www.npmjs.com/package/@bonjour-foundation/smiley) [![Tweet](https://img.shields.io/twitter/url?url=https%3A%2F%2Fdeckdeckgo.com)](https://twitter.com/intent/tweet?url=https%3A%2F%2Fbonjour.help&text=An%20interactive%20smiley%20to%20communicate%20how%20you%20feel%20(about%20something).%20)
+
 ## Installation
 
 Via npm:
