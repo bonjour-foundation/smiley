@@ -17,7 +17,7 @@ With a script tag:
 ```
 <script
   src="https://unpkg.com/@bonjour-foundation/smiley@latest/dist/bonjour-smiley/bonjour-smiley.esm.js"
-  type="module"
+  type="module">
 </script>
 ```
 
