@@ -105,7 +105,7 @@ label {
   line-height: var(--text-line-height, calc(4rem / 3));
   /**
    * @prop --text-font-family: text font-family
-   * @default: 1rem
+   * @default: inherit
    */
   font-family: var(--text-font-family, inherit);
 

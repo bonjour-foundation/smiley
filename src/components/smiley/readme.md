@@ -26,7 +26,7 @@
 | `--margin`           | the component margin @default: 0 auto                                          |
 | `--outline`          | the outline around the smiley button @default: none                            |
 | `--size`             | the component size @default: 12rem                                             |
-| `--text-font-family` | text font-family @default: 1rem                                                |
+| `--text-font-family` | text font-family @default: inherit                                             |
 | `--text-font-size`   | text font-size @default: 1rem                                                  |
 | `--text-font-weight` | text font-weight @default: 800                                                 |
 | `--text-line-height` | text line-height @default: calc(4rem / 3)                                      |
