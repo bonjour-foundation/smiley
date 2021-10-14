@@ -1,4 +1,4 @@
-import {Component, h, Host, Prop, State, Event, EventEmitter} from '@stencil/core';
+import { Component, h, Host, State, Event, EventEmitter, ComponentInterface } from '@stencil/core';
 
 import {SmileyState} from '../../types/smiley';
 
@@ -14,21 +14,12 @@ import {debounce} from '../../utils/debounce.utils';
   styleUrl: 'smiley.scss',
   shadow: true
 })
-export class Smiley {
-
-  /**
-   * Turn to `false` if no question should be asked.
-   */
-  @Prop()
-  question: boolean = true;
-
+export class Smiley implements ComponentInterface {
   @State()
   private smiley: SmileyState;
 
   @State()
   private stateLabel: 'hidden' | 'visible' = 'hidden';
-
-  private questionTimeout: NodeJS.Timeout;
 
   /**
    * Emits the state (super, well, okay, not_well or bad) that has been selected.
@@ -38,23 +29,7 @@ export class Smiley {
 
   private debounceState = debounce(() => this.state.emit(this.smiley));
 
-  componentWillLoad() {
-    if (!this.question) {
-      this.initState();
-    }
-  }
-
-  componentDidLoad() {
-    if (this.question) {
-      this.questionTimeout = setTimeout(() => this.initState(), 2500);
-    }
-  }
-
   private next() {
-    if (this.questionTimeout) {
-      clearTimeout(this.questionTimeout);
-    }
-
     if (!this.smiley) {
       this.initState();
       return;
@@ -83,7 +58,7 @@ export class Smiley {
   private initState() {
     this.smiley = SmileyState.SUPER;
 
-    this.state.emit(this.smiley);
+    this.debounceState();
 
     setTimeout(() => (this.stateLabel = 'visible'), 50);
   }

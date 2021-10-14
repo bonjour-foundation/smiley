@@ -1,6 +1,6 @@
 {
   "name": "@bonjour-foundation/smiley",
-  "version": "1.0.0-beta.7",
+  "version": "1.0.0-beta.8",
   "description": "An interactive smiley to communicate how you feel (about something).",
   "main": "dist/index.cjs.js",
   "module": "dist/index.js",

@@ -8,10 +8,6 @@ import { HTMLStencilElement, JSXBase } from "@stencil/core/internal";
 import { SmileyState } from "./types/smiley";
 export namespace Components {
     interface BonjourSmiley {
-        /**
-          * Turn to `false` if no question should be asked.
-         */
-        "question": boolean;
     }
 }
 declare global {
@@ -31,10 +27,6 @@ declare namespace LocalJSX {
           * Emits the state (super, well, okay, not_well or bad) that has been selected.
          */
         "onState"?: (event: CustomEvent<SmileyState>) => void;
-        /**
-          * Turn to `false` if no question should be asked.
-         */
-        "question"?: boolean;
     }
     interface IntrinsicElements {
         "bonjour-smiley": BonjourSmiley;

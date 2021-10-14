@@ -4,13 +4,6 @@
 <!-- Auto Generated Below -->
 
 
-## Properties
-
-| Property   | Attribute  | Description                                     | Type      | Default |
-| ---------- | ---------- | ----------------------------------------------- | --------- | ------- |
-| `question` | `question` | Turn to `false` if no question should be asked. | `boolean` | `true`  |
-
-
 ## Events
 
 | Event   | Description                                                                  | Type                                                                                                                |

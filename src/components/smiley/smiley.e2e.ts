@@ -85,6 +85,8 @@ describe('smiley', () => {
 
     await button.click();
 
+    await page.waitForTimeout(750);
+
     expect(smileyState).toHaveReceivedEventDetail('super');
   });
 
