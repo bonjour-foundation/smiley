@@ -1,5 +1,4 @@
-# my-component
-
+# bonjour-smiley
 
 
 <!-- Auto Generated Below -->
