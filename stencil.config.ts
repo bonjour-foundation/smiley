@@ -8,8 +8,7 @@ export const config: Config = {
   namespace: 'bonjour-smiley',
   outputTargets: [
     {
-      type: 'dist',
-      esmLoaderPath: '../loader'
+      type: 'dist'
     },
     {
       type: 'docs-readme'
