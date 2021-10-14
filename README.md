@@ -2,7 +2,7 @@
 
 An interactive smiley to communicate how you feel (about something).
 
-# Installation
+## Installation
 
 Via npm:
 
@@ -17,6 +17,14 @@ With a script tag:
   src="https://unpkg.com/@bonjour-foundation/smiley@latest/dist/bonjour-smiley/bonjour-smiley.esm.js">
   type="module"
 </script>
+```
+
+## Usage
+
+See component [readme](src/components/smiley/readme.md).
+
+```
+<bonjour-smiley> </bonjour-smiley>
 ```
 
 ## Run the project locally

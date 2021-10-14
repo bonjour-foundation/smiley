@@ -6,12 +6,19 @@ import {SmileyAsset} from '../asset/smiley.asset';
 import {translate} from '../../utils/translations.utils';
 import {debounce} from '../../utils/debounce.utils';
 
+/**
+ * @slot question - An optional slot to display your personal question
+ */
 @Component({
   tag: 'bonjour-smiley',
   styleUrl: 'smiley.scss',
   shadow: true
 })
 export class Smiley {
+
+  /**
+   * Turn to `false` if no question should be asked.
+   */
   @Prop()
   question: boolean = true;
 
@@ -23,8 +30,11 @@ export class Smiley {
 
   private questionTimeout: NodeJS.Timeout;
 
+  /**
+   * Emits the state (super, well, okay, not_well or bad) that has been selected.
+   */
   @Event()
-  private state: EventEmitter<SmileyState>;
+  state: EventEmitter<SmileyState>;
 
   private debounceState = debounce(() => this.state.emit(this.smiley));
 

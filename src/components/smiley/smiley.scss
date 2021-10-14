@@ -1,6 +1,10 @@
 :host {
   display: block;
 
+  /**
+   * @prop --size: the component size
+   * @default: 15rem
+   */
   width: var(--size, 15rem);
   height: var(--size, 15rem);
 
@@ -32,11 +36,19 @@ button {
 
   cursor: pointer;
 
-  width: calc(var(--size, 15rem) - var(--margin, 4rem));
-  height: calc(var(--size, 15rem) - var(--margin, 4rem));
+  /**
+   * @prop --margin: a margin that reduces the smiley size in comparison to its host
+   * @default: 5rem
+   */
+  width: calc(var(--size, 15rem) - var(--margin, 5rem));
+  height: calc(var(--size, 15rem) - var(--margin, 5rem));
 
   &:focus,
   &:active {
+    /**
+     * @prop --outline: the outline around the smiley button
+     * @default: none
+     */
     outline: var(--outline, none);
   }
 
@@ -45,6 +57,9 @@ button {
   left: 50%;
   transform: translate(-50%, -50%);
 
+  /**
+   * @prop --zIndex: the smiley button z-index
+   */
   z-index: var(--zIndex);
 }
 
@@ -53,7 +68,11 @@ label {
   top: 50%;
   left: 50%;
 
-  transform: translate(-50%, calc(-1 * ((var(--size, 15rem) - var(--text-top, 2rem)) / 2)));
+  /**
+   * @prop --text-top: an offset to display the question and labels
+   * @default: 1.6rem
+   */
+  transform: translate(-50%, calc(-1 * ((var(--size, 15rem) - var(--text-top, 1.6rem)) / 2)));
 
   pointer-events: none;
 
@@ -63,9 +82,21 @@ label {
     z-index: calc(var(--zIndex) + 1);
   }
 
+  /**
+   * @prop --text-font-size: text fonz-size
+   * @default: 1.25rem
+   */
   font-size: var(--text-font-size, 1.25rem);
+  /**
+   * @prop --text-font-weight: text fonz-weight
+   * @default: 400
+   */
   font-weight: var(--text-font-weight, 400);
-  line-height: var(--text-line-height, 1.6666666666666667rem);
+  /**
+   * @prop --text-line-height: text line-height
+   * @default: calc(5rem / 3)
+   */
+  line-height: var(--text-line-height, calc(5rem / 3));
 
   text-align: center;
 
