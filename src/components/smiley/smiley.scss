@@ -8,6 +8,12 @@
   width: var(--size, 15rem);
   height: var(--size, 15rem);
 
+  /**
+   * @prop --margin: the component margin
+   * @default: 0 auto
+   */
+  margin: var(--margin, 0 auto);
+
   position: relative;
 
   --zIndex: 0;
@@ -37,11 +43,11 @@ button {
   cursor: pointer;
 
   /**
-   * @prop --margin: a margin that reduces the smiley size in comparison to its host
+   * @prop --inner-margin: a margin that reduces the smiley size in comparison to its host
    * @default: 5rem
    */
-  width: calc(var(--size, 15rem) - var(--margin, 5rem));
-  height: calc(var(--size, 15rem) - var(--margin, 5rem));
+  width: calc(var(--size, 15rem) - var(--inner-margin, 5rem));
+  height: calc(var(--size, 15rem) - var(--inner-margin, 5rem));
 
   &:focus,
   &:active {
