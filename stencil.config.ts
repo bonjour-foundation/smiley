@@ -8,8 +8,7 @@ export const config: Config = {
   namespace: 'bonjour-smiley',
   outputTargets: [
     {
-      type: 'dist',
-      esmLoaderPath: '../loader'
+      type: 'dist'
     },
     {
       type: 'docs-readme'
@@ -17,6 +16,9 @@ export const config: Config = {
     {
       type: 'www',
       serviceWorker: null // disable service workers
+    },
+    {
+      type: 'dist-custom-elements-bundle'
     }
   ],
   plugins: [
